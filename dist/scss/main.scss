@@ -2,7 +2,7 @@
 
 body {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient($violet, $blue);
   display: flex;
   align-items: center;
@@ -20,7 +20,9 @@ body {
 }
 
 .textWrapper {
-  transform: translate(0%, 20%);
+  transform: translate(0%, 26%);
+  width: 100%;
+  padding: 0 5%;
 }
 
 .header {
@@ -30,6 +32,7 @@ body {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 img {
@@ -53,4 +56,26 @@ img {
   width: 90%;
   transform: translate(12%, -90%);
   z-index: -1;
+}
+
+.faq {
+}
+
+.faq1,
+.faq2,
+.faq3,
+.faq4,
+.faq5 {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.faq-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.expand {
+  display: none;
 }
