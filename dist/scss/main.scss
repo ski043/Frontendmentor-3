@@ -17,10 +17,10 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .textWrapper {
-  transform: translate(0%, 26%);
   width: 100%;
   padding: 0 5%;
 }
@@ -43,7 +43,7 @@ img {
 .img-container {
   position: absolute;
   justify-self: center;
-  transform: translate(-5%, -55%);
+  transform: translate(-5%, -152%);
 }
 
 .card-img {
@@ -54,20 +54,8 @@ img {
   position: absolute;
   justify-self: center;
   width: 90%;
-  transform: translate(12%, -90%);
+  transform: translate(12%, -100%);
   z-index: -1;
-}
-
-.faq {
-}
-
-.faq1,
-.faq2,
-.faq3,
-.faq4,
-.faq5 {
-  padding: 1.5rem;
-  border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .faq-flex {
@@ -76,6 +64,31 @@ img {
   justify-content: space-between;
 }
 
+.slide {
+  border: none;
+  background: none;
+}
+
+.arrow {
+  width: 1.2rem;
+}
+
+.faq.active .arrow {
+  transform: rotate(180deg);
+  transition: 0.2s all ease-in-out;
+}
+
+.faq {
+  cursor: pointer;
+}
+
 .expand {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.faq.active .expand {
+  height: 150px;
 }

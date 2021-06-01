@@ -1,8 +1,7 @@
-function myFunction() {
-    const expand = document.querySelector('.expand')
-    if (expand.style.display === 'none') {
-        expand.style.display = "block";
-    } else {
-        expand.style.display = "none";
-    }
+const accordain = document.getElementsByClassName('faq')
+
+for(let i = 0; i < accordain.length; i++) {
+    accordain[i].addEventListener('click', function() {
+        this.classList.toggle('active')
+    })
 }

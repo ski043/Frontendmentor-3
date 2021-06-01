@@ -42,11 +42,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .textWrapper {
-  -webkit-transform: translate(0%, 26%);
-          transform: translate(0%, 26%);
   width: 100%;
   padding: 0 5%;
 }
@@ -74,8 +75,8 @@ img {
   position: absolute;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-transform: translate(-5%, -55%);
-          transform: translate(-5%, -55%);
+  -webkit-transform: translate(-5%, -152%);
+          transform: translate(-5%, -152%);
 }
 
 .card-img {
@@ -87,18 +88,9 @@ img {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 90%;
-  -webkit-transform: translate(12%, -90%);
-          transform: translate(12%, -90%);
+  -webkit-transform: translate(12%, -100%);
+          transform: translate(12%, -100%);
   z-index: -1;
-}
-
-.faq1,
-.faq2,
-.faq3,
-.faq4,
-.faq5 {
-  padding: 1.5rem;
-  border-bottom: 1px solid #e7e7e7;
 }
 
 .faq-flex {
@@ -111,7 +103,35 @@ img {
           justify-content: space-between;
 }
 
+.slide {
+  border: none;
+  background: none;
+}
+
+.arrow {
+  width: 1.2rem;
+}
+
+.faq.active .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.faq {
+  cursor: pointer;
+}
+
 .expand {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.faq.active .expand {
+  height: 150px;
 }
 /*# sourceMappingURL=main.css.map */
