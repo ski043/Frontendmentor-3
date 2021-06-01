@@ -75,20 +75,35 @@ img {
 
 .faq.active .arrow {
   transform: rotate(180deg);
-  transition: 0.2s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .faq {
   cursor: pointer;
+  padding: 1.2rem 0;
+  border-bottom: 2px solid $border;
 }
 
 .expand {
   height: 0;
   overflow: hidden;
   overflow-y: hidden;
+  width: 60%;
+  margin-top: 0.3rem;
   transition: 0.5s;
 }
 
 .faq.active .expand {
-  height: 150px;
+  height: 40px;
+}
+
+.faq.active .title {
+  font-size: 1.2rem;
+  color: $very-dark-gray;
+}
+
+@media (min-width: 900px) {
+  .card {
+    display: flex;
+  }
 }
