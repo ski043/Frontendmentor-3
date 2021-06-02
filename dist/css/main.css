@@ -66,6 +66,68 @@ body {
   padding-bottom: 2rem;
 }
 
+.faq {
+  cursor: pointer;
+  padding: 1.2rem 0;
+  border-bottom: 2px solid #e7e7e9;
+}
+
+.faq-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide {
+  border: none;
+  background: none;
+}
+
+.arrow {
+  width: 1.2rem;
+}
+
+.expand {
+  height: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 60%;
+  margin-top: 0.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.faq.active .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.title:hover {
+  color: #f47b56;
+}
+
+.faq.active .expand {
+  height: 40px;
+  opacity: 0.6;
+}
+
+.faq.active .title {
+  font-size: 1.2rem;
+  color: #4a4b5e;
+  font-weight: 700;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -91,68 +153,6 @@ img {
   -webkit-transform: translate(12%, -100%);
           transform: translate(12%, -100%);
   z-index: -1;
-}
-
-.faq-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.slide {
-  border: none;
-  background: none;
-}
-
-.arrow {
-  width: 1.2rem;
-}
-
-.faq.active .arrow {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-
-.faq {
-  cursor: pointer;
-  padding: 1.2rem 0;
-  border-bottom: 2px solid #e7e7e9;
-}
-
-.expand {
-  height: 0;
-  overflow: hidden;
-  overflow-y: hidden;
-  width: 60%;
-  margin-top: 0.3rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.title {
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.title:hover {
-  color: #f47b56;
-}
-
-.faq.active .expand {
-  height: 40px;
-  opacity: 0.6;
-}
-
-.faq.active .title {
-  font-size: 1.2rem;
-  color: #4a4b5e;
-  font-weight: 700;
 }
 
 @media (min-width: 900px) {
