@@ -135,20 +135,56 @@ img {
   transition: 0.5s;
 }
 
+.title {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.title:hover {
+  color: #f47b56;
+}
+
 .faq.active .expand {
   height: 40px;
+  opacity: 0.6;
 }
 
 .faq.active .title {
   font-size: 1.2rem;
   color: #4a4b5e;
+  font-weight: 700;
 }
 
 @media (min-width: 900px) {
-  .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .title {
+    font-size: 1.4rem;
+  }
+  .expand {
+    width: 85%;
+  }
+  .faq.active .expand {
+    height: 60px;
+    opacity: 0.6;
+  }
+  .faq.active .title {
+    font-size: 1.4rem;
+  }
+  .faq {
+    padding: 1.4rem;
+  }
+  .expand {
+    font-size: 1.3rem;
+  }
+  .card-img {
+    width: 70rem;
+  }
+  .img-container {
+    position: relative;
+    -webkit-transform: translate(-20%, 0);
+            transform: translate(-20%, 0);
+  }
+  .textWrapper {
+    padding: 1rem 5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
